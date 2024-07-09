@@ -243,3 +243,287 @@ header {
     margin: 0 1rem;
     cursor: pointer;
 }
+
+
+
+/* ########################## media query ######################### */
+
+ @media (max-width:350px){
+    :root{
+        font-size:45%;
+        margin: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+
+.navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+    }
+    .box2, .box3{
+        margin-top: 5rem;
+        width:100%;
+    }
+    .box-wrapper{
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .box-wrapper{
+       box-shadow:none;
+   }
+    
+   .banner-left, .banner-right{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+   .banner-style{
+       border-radius:0px;
+   }
+   .btn-cta{
+       padding: 0.3em 1.5em;
+       letter-spacing: 0.3rem;
+   }
+   .shakya{
+       width: 100%;
+       height: 100%;
+   }
+   .btn-primary{
+       padding: 0.3em 1.5em;
+       letter-spacing: 0.3rem;
+   }
+
+   .contact-form .pubg-skills .required{
+       float: none;
+       width: 100%;
+       height: auto;
+       margin-bottom: 5rem;
+   }
+
+   .contact-form .pubg-skills .form{
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+}
+
+
+ @media  (min-width:351px ) and (max-width:500px){
+     :root{
+         font-size:50%;
+         margin: 0%;
+     }
+
+     p{
+         font-size: 1.2rem;
+     }
+
+
+.navbar .nav-items , .navbar .logo{
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+     .row{
+         height: auto;
+         width: 100%;
+     }
+
+     .row .img-box,
+     .row .text-box{
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
+
+     .features .box{
+         float: none;
+         width: 100%;
+         height: auto;
+         text-align: center;
+         border-radius: 50px;
+         box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+     }
+     .box2, .box3{
+         margin-top: 5rem;
+         width:100%;
+     }
+     .box-wrapper{
+         border-radius: 50px;
+         width: 100%;
+     }
+
+     .box-wrapper{
+        box-shadow:none;
+    }
+     
+    .banner-left, .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-style{
+        border-radius:0px;
+    }
+    .btn-cta{
+        padding: 0.3em 1.5em;
+        letter-spacing: 0.3rem;
+    }
+    .shakya{
+        width: 100%;
+        height: 100%;
+    }
+    .btn-primary{
+        padding: 0.3em 1.5em;
+        letter-spacing: 0.3rem;
+    }
+
+    .contact-form .pubg-skills .required{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form .pubg-skills .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+ }
+
+ /* ################# media query more than 500px ######################## */
+
+ @media (min-width:501px) and (max-width:768px){
+    :root{
+        font-size:50%;
+        margin: 0%;
+    } 
+    p{
+        font-size: 2.6rem;
+    }
+
+.navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box,
+    .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+    }
+    .box2, .box3{
+        margin-top: 5rem;
+        width:100%;
+    }
+    .box-wrapper{
+        border-radius: 50px;
+        width: 100%;
+    }
+
+    .box-wrapper{
+       box-shadow:none;
+   }
+    
+   .banner-left, .banner-right{
+       float: none;
+       width: 100%;
+       text-align: center;
+   }
+   .banner-style{
+       border-radius:0px;
+   }
+   .btn-cta{
+       padding: 0.3em 2.2em;
+       letter-spacing: 0.4rem;
+   }
+   .shakya{
+       width: 100%;
+       height: 100%;
+   }
+   .btn-primary{
+       padding: 0.3em 2.2em;
+       letter-spacing: 0.4rem;
+   }
+
+   .contact-form .pubg-skills .required{
+       float: none;
+       width: 100%;
+       height: auto;
+       margin-bottom: 5rem;
+   }
+
+   .contact-form .pubg-skills .form{
+       float: none;
+       width: 100%;
+       height: auto;
+   }
+}
+
+/* ########################## media query more than 768px ##################### */
+@media(min-width:769px) and (max-width:1200px){
+    :root{
+        font-size: 57%;
+    }
+}
+
+/* ###################### horizontal media query #################### */
+
+ @media(orientation: landscape ) and (min-height:351px) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+} 
+
+@media(orientation: landscape) and (max-height:350px){
+    .header{
+        height: 100vmax;
+    }
+}
