@@ -102,50 +102,10 @@
     </footer>
 
 
-        <!-- Modal HTML -->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 class="welcome-text">Welcome to 4EVER FAMILY</h2>
-                <img src="./IMG/model.jpeg" alt="Advertisement" class="modal-image">
-            </div>
-        </div>
-        
-    
-        <!-- JavaScript for Modal -->
-        <script>
-            // GSAP and modal script
-            document.addEventListener("DOMContentLoaded", function() {
-                var modal = document.getElementById("modal");
-                var span = document.getElementsByClassName("close")[0];
-                
-                // Open the modal
-                document.querySelectorAll(".open-modal").forEach(function(element) {
-                    element.onclick = function() {
-                        modal.style.display = "flex";
-                    };
-                });
-                
-                // Close the modal
-                span.onclick = function() {
-                    modal.style.display = "none";
-                };
-    
-                // Close modal if clicked outside of modal content
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                };
-            });
-    
-            // GSAP animations
-          
-        </script>
     
     
 
-    
+
     <script>
         // GSAP Timeline for header animations
         const headerTimeline = gsap.timeline();
