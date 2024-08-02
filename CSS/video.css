@@ -575,7 +575,6 @@ header {
 video {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 /* Subtitle styling */
@@ -603,23 +602,12 @@ video {
 }
 
 
-
-
-
-.video-container {
-    width: 80%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+@media (min-width: 360px) {
+    .video-item {
+        max-width: 80%;
+    }
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+
+
+
