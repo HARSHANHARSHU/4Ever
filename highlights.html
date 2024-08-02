@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <link rel="stylesheet" href="./CSS/video.css">
     <link rel="icon" href="IMG/medical.png" type="image/png">
-    <title> 4EVER OFFICIAL - Highlights </title>
+    <title>4EVER OFFICIAL - Highlights</title>
 </head>
 <body>
     <header class="header">
@@ -33,11 +33,11 @@
     </header>
     <section class="section" id="highlights">
         <div class="container">
-            <div class="row row1">
+            <div class="row">
                 <div class="video-box">
-                    <video controls id="video-element">
+                    <video controls>
                         <source src="/IMG/harshu.mp4" type="video/mp4">
-                        Your browser does not support the video tag
+                        Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="text-box">
@@ -46,11 +46,9 @@
                     <a href="about.html" class="btn btn-secondary">More</a>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row row1">
+            <div class="row">
                 <div class="video-box">
-                    <video controls id="video-element">
+                    <video controls>
                         <source src="./IMG/video-002.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -63,9 +61,6 @@
             </div>
         </div>
     </section>
-    
-    
-
     <footer class="footer">
         <div class="social-media-links">
             <i class="fab fa-whatsapp fa-4x" data-link="https://chat.whatsapp.com/GRdJU5QwMjyAUsFdKv6CiM"></i>
@@ -75,22 +70,7 @@
         </div>
         <p>4EVER FAMILY</p>
     </footer>
-
     <script>
-        // GSAP Animations
-        gsap.from(".header", {duration: 1, y: -100, opacity: 0, ease: "elastic.out(1, 0.3)"});
-        gsap.from(".navbar", {duration: 1, delay: 0.5, opacity: 0, ease: "power2.inOut"});
-        gsap.from(".logo", {duration: 1, delay: 1, x: -50, opacity: 0, ease: "back.out(1.7)"});
-        gsap.from(".nav-item", {duration: 1, delay: 1.5, y: -20, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
-        gsap.from(".header-content h1", {duration: 1, delay: 2, x: -100, opacity: 0, ease: "power2.inOut"});
-        gsap.from(".header-content p", {duration: 1, delay: 2.5, x: 100, opacity: 0, ease: "power2.inOut"});
-        gsap.from(".btn", {duration: 1, delay: 3, scale: 0, ease: "elastic.out(1, 0.3)"});
-        gsap.from(".row1", {duration: 1, delay: 3.5, y: 100, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
-        gsap.from(".video-box", {duration: 1, delay: 4, scale: 0.5, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
-        gsap.from(".text-box", {duration: 1, delay: 4.5, x: 100, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
-        gsap.from(".footer", {duration: 1, delay: 5, y: 100, opacity: 0, ease: "power2.inOut"});
-        gsap.from(".fab", {duration: 1, delay: 5.5, scale: 0, stagger: 0.2, ease: "back.out(1.7)"});
-
         // Social media links click event
         document.querySelectorAll('.fab').forEach(icon => {
             const link = icon.getAttribute('data-link');
