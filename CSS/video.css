@@ -525,19 +525,79 @@ header {
 
 
 
+/* Container for the video section */
+.highlights-section {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+}
+
+/* Title for the video section */
+.section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Grid container for videos */
 .video-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
+/* Individual video item */
 .video-item {
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+/* Box container for videos */
+.video-box {
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.video-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Make video element responsive */
 video {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    display: block;
+}
+
+/* Subtitle styling */
+.video-subtitle {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 12px;
+    background-color: #f8f9fa;
+    color: #050505;
+    margin: 0;
+    border-top: 2px solid #ddd;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .video-item {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-item {
+        max-width: 60%;
+    }
 }
