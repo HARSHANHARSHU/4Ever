@@ -169,18 +169,6 @@ header {
     margin-bottom: 10rem;
 }
 
-.video-box {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video-box video {
-    width: 100%;
-    height: auto;
-    max-height: 350px;
-}
 
 .text-box {
     background-color: white;
@@ -526,4 +514,30 @@ header {
     .header{
         height: 100vmax;
     }
+}
+
+
+
+
+
+
+
+
+
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
