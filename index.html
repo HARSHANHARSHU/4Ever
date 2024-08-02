@@ -109,7 +109,7 @@
     <script>
         // GSAP Timeline for header animations
         const headerTimeline = gsap.timeline();
-        headerTimeline.from(".header-content h1", { duration: 1, y: -50, opacity: 0, ease: "bounce" })
+        headerTimeline.from(".header-content h1", { duration: 1,  opacity: 0, ease: "bounce" })
             .from(".header-content p", { duration: 1, y: 50, opacity: 0, delay: 0.5 }, "-=0.5")
             .from(".btn-primary", { duration: 1, scale: 0, delay: 1, ease: "elastic" }, "-=0.5")
             .from(".navbar", { duration: 1, y: -50, opacity: 0, ease: "power2.out" }, "-=1.5");
@@ -123,8 +123,8 @@
                     toggleActions: "play none none none"
                 }
             })
-            .from(row.querySelector('.img-box img'), { x: -100, opacity: 0, duration: 1, ease: "power2.out" })
-            .from(row.querySelector('.text-box'), { x: 100, opacity: 0, duration: 1, ease: "power2.out" }, "-=0.5");
+            // .from(row.querySelector('.img-box img'), { x: -100, opacity: 0, duration: 1, ease: "power2.out" })
+            // .from(row.querySelector('.text-box'), { x: 100, opacity: 0, duration: 1, ease: "power2.out" }, "-=0.5");
         });
 
         // GSAP animation for features section
