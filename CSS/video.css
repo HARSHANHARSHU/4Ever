@@ -195,8 +195,9 @@ header {
 .video-box video {
     width: 100%;
     height: auto;
-    max-height: 350px;
+    max-height: 350px; /* Adjust as needed */
 }
+
 
 .text-box {
     background-color: white;
