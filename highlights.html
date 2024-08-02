@@ -5,15 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eb20ea7e43.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <link rel="stylesheet" href="./CSS/video.css">
-    <link rel="icon" href="IMG/favicon.png" type="image/png">
-    <title>4EVER OFFICIAL - Highlights</title>
-    <style>
-        .video-box video {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <link rel="icon" href="IMG/medical.png" type="image/png">
+    <title> 4EVER OFFICIAL - Highlights </title>
 </head>
 <body>
     <header class="header">
@@ -62,12 +57,11 @@
                 </div>
                 <div class="text-box">
                     <h2 class="lg-heading text-black lt-space"> XMAD ROOM MATCH</h2>
-                    <p class="text-gray">4Ever's Extrodenery performance 🔥</p>
+                    <p class="text-gray"> Best Of 4Ever In Room Matchs🔥</p>
                     <a href="about.html" class="btn btn-secondary">More</a>
                 </div>
             </div>
         </div>
-        
     </section>
 
     <footer class="footer">
@@ -76,18 +70,34 @@
             <i class="fab fa-discord fa-4x" data-link="https://discord.com/invite/QMvKSQV"></i>
             <i class="fab fa-instagram fa-4x" data-link="https://www.instagram.com/4ever_official?utm_source=qr&igsh=MW16ZHI5OXNydWloZA=="></i>
             <i class="fab fa-youtube fa-4x" data-link="https://www.youtube.com/@4Evr_Official"></i>
-            <script>
-                document.querySelectorAll('.fab').forEach(icon => {
-                    const link = icon.getAttribute('data-link');
-                    if (link) {
-                        icon.addEventListener('click', () => {
-                            window.open(link, '_blank');
-                        });
-                    }
-                });
-            </script>
         </div>
         <p>4EVER FAMILY</p>
     </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.from(".header", {duration: 1, y: -100, opacity: 0, ease: "elastic.out(1, 0.3)"});
+        gsap.from(".navbar", {duration: 1, delay: 0.5, opacity: 0, ease: "power2.inOut"});
+        gsap.from(".logo", {duration: 1, delay: 1, x: -50, opacity: 0, ease: "back.out(1.7)"});
+        gsap.from(".nav-item", {duration: 1, delay: 1.5, y: -20, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
+        gsap.from(".header-content h1", {duration: 1, delay: 2, x: -100, opacity: 0, ease: "power2.inOut"});
+        gsap.from(".header-content p", {duration: 1, delay: 2.5, x: 100, opacity: 0, ease: "power2.inOut"});
+        gsap.from(".btn", {duration: 1, delay: 3, scale: 0, ease: "elastic.out(1, 0.3)"});
+        gsap.from(".row1", {duration: 1, delay: 3.5, y: 100, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
+        gsap.from(".video-box", {duration: 1, delay: 4, scale: 0.5, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
+        gsap.from(".text-box", {duration: 1, delay: 4.5, x: 100, opacity: 0, stagger: 0.2, ease: "power2.inOut"});
+        gsap.from(".footer", {duration: 1, delay: 5, y: 100, opacity: 0, ease: "power2.inOut"});
+        gsap.from(".fab", {duration: 1, delay: 5.5, scale: 0, stagger: 0.2, ease: "back.out(1.7)"});
+
+        // Social media links click event
+        document.querySelectorAll('.fab').forEach(icon => {
+            const link = icon.getAttribute('data-link');
+            if (link) {
+                icon.addEventListener('click', () => {
+                    window.open(link, '_blank');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
